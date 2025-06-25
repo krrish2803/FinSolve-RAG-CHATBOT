@@ -3,4 +3,10 @@ groq
 python-dotenv
 streamlit
 langchain
-faiss
+langchain-community
+faiss-cpu
+sentence-transformers
+pandas
+requests
+pypdf
+uvicorn
