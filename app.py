@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE = "https://finsolve-rag-chatbot.onrender.com/"
+API_BASE = "https://finsolve-rag-chatbot.onrender.com"
 
 st.title("FinSolve RAG Chatbot")
 
