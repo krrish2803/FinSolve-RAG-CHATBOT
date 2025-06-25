@@ -4,6 +4,7 @@ python-dotenv
 streamlit
 langchain
 langchain-community
+langchain-huggingface
 faiss-cpu
 sentence-transformers
 pandas
