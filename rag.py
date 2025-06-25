@@ -2,12 +2,12 @@ from langchain_community.vectorstores import FAISS
 from groq import Groq
 import os
 from config import DATA
-from langchain_community.embeddings import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceBgeEmbeddings
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def get_answer(query, role):
-    db = FAISS.load_local(f"{DATA}/{role}/faiss_index", HuggingFaceBgeEmbeddings(model_name="BAAI/bge-base-en-v1.5"),allow_dangerous_deserialization=True)
+    db = FAISS.load_local(f"{DATA}/{role}/faiss_index", HuggingFaceBgeEmbeddings(model_name="BAAI/bge-base-en-v1.5"))
     role_key = role.lower()
     if role == "C-Level":
         docs = db.similarity_search(query, k=4)
