@@ -12,7 +12,11 @@ class LoginRequest(BaseModel):
 class QueryRequest(BaseModel):
     query: str
     role: str
-
+    
+@app.get("/")
+async def root():
+    return {"message": "✅ FinSolve RAG Chatbot backend is up and running!"}
+    
 @app.post("/login")
 def login(payload: LoginRequest):
     user = authenticate_user(payload.email, payload.password)
