@@ -1,0 +1,8 @@
+{
+  "alice@fin.com": { "password": "123", "role": "Finance" },
+  "bob@hr.com": { "password": "abc", "role": "HR" },
+  "carol@marketing.com": { "password": "xyz", "role": "Marketing" },
+  "dev@eng.com": { "password": "engg", "role": "Engineering" },
+  "ceo@company.com": { "password": "admin", "role": "C-Level" },
+  "emp@company.com": { "password": "emp", "role": "Employee" }
+}
