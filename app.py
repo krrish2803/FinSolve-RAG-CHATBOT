@@ -3,7 +3,7 @@ import requests
 import uvicorn
 import os
 
-port = int(os.environ.get("PORT", 10000))  # Fallback to 10000 for local
+port = int(os.environ.get("PORT", 10100))  # Fallback to 10000 for local
 uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
 
 
