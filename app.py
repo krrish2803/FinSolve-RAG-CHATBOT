@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE = "API_BASE = "http://localhost:8000"
+API_BASE = "http://localhost:8000"
 
 st.set_page_config(page_title="FinSolve RAG Chatbot", layout="centered")
 st.title("🤖 FinSolve RAG Chatbot")
